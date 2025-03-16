@@ -1,10 +1,10 @@
 # go-profile
 
-An *incomplete* port of @brendangregg's eBPF profiling application [profile.py](https://github.com/iovisor/bcc/blob/master/tools/profile.py) to Golang.
+An *incomplete* port of [brendangregg](https://github.com/brendangregg)'s eBPF profiling application [profile.py](https://github.com/iovisor/bcc/blob/master/tools/profile.py) to Golang.
 
 Please read Brendan Gregg's Blog post [Linux 4.9's Efficient BPF-based Profiler](https://www.brendangregg.com/blog/2016-10-21/linux-efficient-profiler.html) for more information.
 
-This project required changes to the Golang standard library to support some features ([debug/elf: add SHT_GNU_VERDEF section parsing](https://github.com/golang/go/issues/63952)). Special thanks to @ianlancetaylor and @aclements for guiding me through the submission process.
+This project required changes to the Golang standard library to support some features ([debug/elf: add SHT_GNU_VERDEF section parsing](https://github.com/golang/go/issues/63952)). Special thanks to [ianlancetaylor](https://github.com/ianlancetaylor) and [aclements](https://github.com/aclements) for guiding me through the submission process.
 
 ## Options
 
