@@ -109,3 +109,7 @@ $ cp ./ebpf/btf/testdata/bpf_core_read.h ./headers/bpf
 $ sudo apt-get install linux-tools-common linux-tools-generic
 $ bpftool btf dump file /sys/kernel/btf/vmlinux format c > ./headers/vmlinux.h
 ```
+## Thanks
+- [Brendan Gregg](https://www.brendangregg.com) for the original [profile.py](https://github.com/iovisor/bcc/blob/master/tools/profile.py) and [flamegraph.pl](https://github.com/brendangregg/FlameGraph/blob/master/flamegraph.pl).
+- [Marsel Mavletkulov](https://github.com/marselester) for his [libbpf-tools](https://github.com/marselester/libbpf-tools) project and [blog](https://marselester.com/tag/bpf.html). I also added [tcpinfo](https://github.com/benbaker76/libbpf-tools/tree/master/cmd/tcpinfo) to `libbpf-tools`.
+- [Ian Lance Taylor](https://github.com/ianlancetaylor) and [Austin Clements](https://github.com/aclements) for help submitting changes to the Golang's `debug/elf` standard library to add `SHT_GNU_VERDEF` section parsing.
